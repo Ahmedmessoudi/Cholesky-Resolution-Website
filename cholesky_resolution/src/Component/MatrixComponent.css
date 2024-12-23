@@ -1,0 +1,33 @@
+.table-table-bordered-table-sm{
+  border-radius: 10px;
+}
+
+/* From Uiverse.io by satyamchaudharydev */ 
+/* inspired form gumroad website */
+.buttonSaveMatrix {
+  --bg: #000;
+  --hover-bg: #ff90e8;
+  --hover-text: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid var(--bg);
+  border-radius: 10px;
+  padding: 0.5em 0.8em;
+  margin: 10px 10px;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.buttonSaveMatrix:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.buttonSaveMatrix:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+

@@ -1,0 +1,60 @@
+/* From Uiverse.io by vamsidevendrakumar */ 
+.card {
+  width: 500px;
+  height: 300px;
+  perspective: 1000px;
+  background: transparent;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+  background: transparent;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: transparent;
+}
+
+.card-front {
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  align-items: center;
+
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  background-color:transparent;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
+}
+
+/* Modification pour rendre l'image "fit" à la carte et la rendre plus esthétique */
+.card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* S'assure que l'image couvre toute la zone sans se déformer */
+  border-radius: 10px; /* Adapte les coins arrondis à l'image */
+}
